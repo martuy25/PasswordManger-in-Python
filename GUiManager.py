@@ -24,8 +24,22 @@ entry_password.grid(row=1, column=1)
 button_save.grid(row=2, column=0)
 button_show.grid(row=2, column=1)
 
-# Encrypt and decrypt functions
-key = Fernet.generate_key()
+#Generate a key and storing securely
+#define key path
+key_file_path = "secret.key"
+
+#check to see if key file exist
+if os.path.isfile(key_file_path):
+    #load key from file if available
+    with open(key_file_path, "rb") as key_file:
+        key = key_file.read()
+else:
+    #generate key if none found
+    key = Fernet.generate_key()
+    with open(key_file_path, "wb")as key_file:
+        key_file.write(key)
+
+#cipher_key
 cipher_suite = Fernet(key)
 
 def encrypt(password):
