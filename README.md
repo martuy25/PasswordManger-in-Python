@@ -27,7 +27,7 @@ To get started with the Password Manager, follow these steps:
 1. Clone this repository to your local machine.
 2. Ensure you have Python installed (Python 3.6 or higher).
 3. Install the required libraries using `pip install -r requirements.txt`.
-4. Run the `password_manager.py` script to launch the application.
+4. Run the `GUiManager.py` script to launch the application.
 
 ## Usage
 
