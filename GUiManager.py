@@ -186,8 +186,6 @@ Security Note:
 The complex password generator uses the 'secrets' module, which is designed specifically for cryptographic applications and provides a higher level of security compared to the 'random' module. 'secrets' generates cryptographically secure random numbers suitable for password generation, making it extremely difficult for attackers to predict or guess generated passwords.
 
 Additionally, the generated password includes a mix of uppercase and lowercase letters, digits, and special characters, making it more resilient against common password attacks.
-
-Remember to store generated passwords securely and never reveal them unnecessarily. Consider using a password manager to manage and store your passwords safely.
 """
 
 # Display the security explanation in a message box
